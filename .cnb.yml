@@ -1,0 +1,10 @@
+master:
+  push:
+    - name: "deploy static site"
+      stages:
+        - name: deploy
+          script: echo "deploy done"
+      artifacts:
+        - name: website
+          path: .
+          type: static
