@@ -20,6 +20,10 @@ body {
   letter-spacing: 0;
 }
 
+p {
+  max-width: 72ch;
+}
+
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 
@@ -70,18 +74,18 @@ button, input, select, textarea { font: inherit; }
 }
 .hero h1 {
   margin-top: 22px;
-  font-size: clamp(40px, 5vw, 64px);
-  line-height: 1.22;
+  font-size: clamp(38px, 4.4vw, 58px);
+  line-height: 1.24;
   font-weight: 600;
-  letter-spacing: -1.1px;
-  max-width: 980px;
+  letter-spacing: -0.9px;
+  max-width: 900px;
 }
 .hero-lead {
-  margin-top: 24px;
-  max-width: 720px;
+  margin-top: 22px;
+  max-width: 760px;
   color: var(--muted);
   font-size: 15px;
-  line-height: 2;
+  line-height: 1.95;
 }
 .hero-actions {
   display: flex;
@@ -149,8 +153,8 @@ button, input, select, textarea { font: inherit; }
   text-transform: uppercase;
 }
 .summary-grid p {
-  font-size: 19px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.65;
   font-weight: 500;
 }
 
@@ -168,10 +172,10 @@ button, input, select, textarea { font: inherit; }
 .section-head h2,
 .contact-copy h2 {
   margin-top: 10px;
-  font-size: clamp(28px, 4vw, 48px);
-  line-height: 1.28;
+  font-size: clamp(26px, 3.3vw, 42px);
+  line-height: 1.3;
   font-weight: 600;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.5px;
 }
 .head-note,
 .contact-copy p,
@@ -181,8 +185,8 @@ button, input, select, textarea { font: inherit; }
 .service-content p,
 .contact-form span {
   color: var(--muted);
-  font-size: 15px;
-  line-height: 1.95;
+  font-size: 14px;
+  line-height: 1.9;
 }
 
 .service-table,
@@ -197,7 +201,7 @@ button, input, select, textarea { font: inherit; }
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 24px;
-  padding: 34px 0;
+  padding: 38px 0;
   border-bottom: 1px solid var(--line);
 }
 .service-item.strong { background: transparent; }
@@ -211,8 +215,8 @@ button, input, select, textarea { font: inherit; }
 .process-note h3,
 .coop-grid h3 {
   display: block;
-  font-size: 26px;
-  line-height: 1.42;
+  font-size: 23px;
+  line-height: 1.45;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -230,10 +234,10 @@ button, input, select, textarea { font: inherit; }
   border-left: 1px solid var(--line);
 }
 .node {
-  padding: 30px 26px 32px;
+  padding: 34px 28px 36px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  min-height: 240px;
+  min-height: 250px;
 }
 .node.highlight {
   background: rgba(138,113,88,0.04);
@@ -254,7 +258,7 @@ button, input, select, textarea { font: inherit; }
 .node strong,
 .process-note h3,
 .coop-grid h3 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .coop-grid {
@@ -275,7 +279,7 @@ button, input, select, textarea { font: inherit; }
   display: grid;
   grid-template-columns: .95fr 1.05fr;
   gap: 32px;
-  padding: 42px 0 0;
+  padding: 48px 0 0;
   border-top: 1px solid var(--line);
 }
 .contact-copy p + p { margin-top: 12px; }
@@ -318,6 +322,14 @@ button, input, select, textarea { font: inherit; }
   .summary-grid article + article,
   .coop-grid article + article { border-left: none; padding-left: 0; }
   .hero-side { border-left: none; border-top: 1px solid var(--line); padding-left: 0; padding-top: 22px; }
+}
+
+.micro-copy {
+  margin-top: 10px;
+  max-width: 56ch;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 @media (max-width: 760px) {
