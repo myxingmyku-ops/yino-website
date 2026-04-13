@@ -339,44 +339,44 @@ button, input, select, textarea { font: inherit; }
   line-height: 1.8;
 }
 
-.micro-copy {
-  margin-top: 10px;
-  max-width: 56ch;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.8;
-}
-
 .subpage-wrap {
-  padding-bottom: 40px;
+  padding-bottom: 52px;
 }
 .subpage-main {
-  padding-top: 28px;
+  padding-top: 32px;
 }
 .sub-hero {
-  padding: 24px 0 36px;
+  padding: 28px 0 44px;
   border-bottom: 1px solid var(--line);
 }
 .sub-hero h1 {
   margin-top: 10px;
-  font-size: clamp(34px, 4vw, 54px);
-  line-height: 1.24;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.28;
   font-weight: 600;
+  letter-spacing: -0.4px;
+}
+.sub-hero .hero-lead {
+  max-width: 62ch;
 }
 .sub-block {
-  padding: 34px 0;
+  padding: 42px 0;
   border-bottom: 1px solid var(--line);
 }
 .sub-block h2 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+.sub-block p + p {
+  margin-top: 12px;
 }
 .sub-block p {
   color: var(--muted);
   font-size: 15px;
-  line-height: 1.95;
-  max-width: 78ch;
+  line-height: 2;
+  max-width: 76ch;
 }
 
 @media (max-width: 760px) {
