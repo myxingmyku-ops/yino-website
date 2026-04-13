@@ -457,6 +457,9 @@ main section {
 }
 
 /* WORKS */
+.works-first {
+  padding-top: 110px;
+}
 .works-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -491,6 +494,49 @@ main section {
   font-size: 12px;
   line-height: 1.8;
   color: #8b877f;
+}
+
+/* RECOGNITION */
+.recognition {
+  padding: 140px 56px;
+  border-top: 1px solid #1a1a1a;
+}
+.recognition-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+.recognition-intro h2 {
+  font-size: clamp(30px, 4vw, 54px);
+  font-weight: 200;
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+.recognition-intro p,
+.recognition-item p {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 2;
+}
+.recognition-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.recognition-item {
+  padding: 22px 0;
+  border-top: 1px solid #171717;
+}
+.recognition-item:last-child {
+  border-bottom: 1px solid #171717;
+}
+.recognition-item span {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  margin-bottom: 10px;
 }
 
 /* CONTACT */
@@ -608,7 +654,8 @@ main section {
   .process-grid,
   .coop-grid,
   .services-grid,
-  .cooperation-layout { grid-template-columns: 1fr; gap: 32px; }
+  .cooperation-layout,
+  .recognition-layout { grid-template-columns: 1fr; gap: 32px; }
   .process-aside { position: static; padding-right: 0; }
   .works-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
   .work-card.w-tall { grid-row: auto; }
