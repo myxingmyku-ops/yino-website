@@ -13,13 +13,13 @@ document.addEventListener('mousemove', e => {
   ring.style.top = e.clientY + 'px';
 });
 
-document.querySelectorAll('a, button, .svc-item, .work-card').forEach(el => {
+document.querySelectorAll('a, button, .svc-item, .work-card, .process-card, .coop-card').forEach(el => {
   el.addEventListener('mouseenter', () => ring.style.transform = 'translate(-50%,-50%) scale(2)');
   el.addEventListener('mouseleave', () => ring.style.transform = 'translate(-50%,-50%) scale(1)');
 });
 
 // Scroll reveal
-const items = document.querySelectorAll('.about-body, .about-data, .svc-item, .work-card, .contact-body');
+const items = document.querySelectorAll('.section-head, .about-body, .about-data, .svc-item, .process-card, .coop-card, .work-card, .contact-body, .process-flow, .coop-note');
 items.forEach(el => el.classList.add('reveal'));
 
 const io = new IntersectionObserver(entries => {
@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
 function handleSubmit(e) {
   e.preventDefault();
   const btn = e.target.querySelector('button');
-  btn.textContent = '已收到，我们将尽快联系您';
+  btn.textContent = '已收到，我们会先进行项目判断';
   btn.style.borderColor = '#666';
   btn.style.color = '#666';
   btn.disabled = true;
