@@ -1,11 +1,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black: #080808;
-  --off: #f2f0eb;
-  --gray: #666;
-  --dim: #333;
-  --gold: #b8965a;
+  --black: #f5f1ea;
+  --off: #2f2923;
+  --gray: #756d64;
+  --dim: #a59a8f;
+  --gold: #8d7762;
+  --line: #ddd4ca;
+  --panel: #f8f4ee;
+  --panel-strong: #efe7dc;
   --font-en: 'Cormorant', serif;
   --font-cn: 'Noto Serif SC', serif;
 }
@@ -50,6 +53,7 @@ main section {
   align-items: center;
   padding: 28px 56px;
   mix-blend-mode: normal;
+  border-bottom: 1px solid rgba(221,212,202,0.35);
 }
 .nav-logo {
   font-family: var(--font-en); font-size: 15px;
@@ -86,7 +90,7 @@ main section {
   font-family: var(--font-cn);
   font-size: clamp(200px, 28vw, 380px);
   font-weight: 200;
-  color: rgba(255,255,255,0.025);
+  color: rgba(141,119,98,0.08);
   line-height: 1;
   user-select: none;
   letter-spacing: -10px;
@@ -152,11 +156,11 @@ main section {
   transition: all .3s ease;
 }
 .hero-link:hover {
-  background: rgba(184,150,90,0.12);
+  background: rgba(141,119,98,0.08);
 }
 .hero-link.muted {
   color: var(--off);
-  border-color: rgba(255,255,255,0.15);
+  border-color: rgba(47,41,35,0.12);
 }
 .hero-bottom {
   display: flex; justify-content: space-between;
@@ -182,7 +186,7 @@ main section {
 .works,
 .contact {
   padding: 140px 56px;
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid var(--line);
   position: relative;
 }
 .about-tag,
@@ -262,8 +266,8 @@ main section {
 }
 .manifesto-card {
   padding: 26px 26px 28px;
-  border: 1px solid #171717;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  border: 1px solid var(--line);
+  background: var(--panel);
 }
 .manifesto-card span {
   display: inline-block;
@@ -293,8 +297,8 @@ main section {
 .service-panel {
   min-height: 320px;
   padding: 34px 32px;
-  border: 1px solid #171717;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  border: 1px solid var(--line);
+  background: var(--panel);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -358,7 +362,7 @@ main section {
   flex-direction: column;
   gap: 12px;
   padding-left: 18px;
-  border-left: 1px solid #232323;
+  border-left: 1px solid var(--line);
 }
 .process-flow-vertical span {
   position: relative;
@@ -374,12 +378,12 @@ main section {
 .process-card,
 .coop-card {
   padding: 28px 28px 30px;
-  border: 1px solid #171717;
-  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0));
+  border: 1px solid var(--line);
+  background: var(--panel);
 }
 .process-card-highlight {
-  border-color: rgba(184,150,90,0.45);
-  background: linear-gradient(180deg, rgba(184,150,90,0.08), rgba(255,255,255,0));
+  border-color: rgba(141,119,98,0.45);
+  background: var(--panel-strong);
 }
 .process-n {
   display: inline-block;
@@ -406,7 +410,7 @@ main section {
 .process-flow {
   margin-top: 44px;
   padding-top: 28px;
-  border-top: 1px solid #171717;
+  border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -477,7 +481,7 @@ main section {
 .work-meta {
   position: absolute; bottom: 0; left: 0; right: 0;
   padding: 32px;
-  background: linear-gradient(transparent, rgba(0,0,0,.85));
+  background: linear-gradient(transparent, rgba(245,241,234,.94));
 }
 .work-meta span {
   display: block; font-family: var(--font-en);
@@ -499,7 +503,7 @@ main section {
 /* RECOGNITION */
 .recognition {
   padding: 140px 56px;
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid var(--line);
 }
 .recognition-layout {
   display: grid;
@@ -525,10 +529,10 @@ main section {
 }
 .recognition-item {
   padding: 22px 0;
-  border-top: 1px solid #171717;
+  border-top: 1px solid var(--line);
 }
 .recognition-item:last-child {
-  border-bottom: 1px solid #171717;
+  border-bottom: 1px solid var(--line);
 }
 .recognition-item span {
   display: inline-block;
@@ -570,7 +574,7 @@ main section {
   min-width: 0;
 }
 .field {
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid var(--line);
   padding: 24px 0;
   transition: border-color .3s;
 }
@@ -589,7 +593,7 @@ main section {
   color: var(--off); font-family: var(--font-cn);
   font-size: 15px; font-weight: 300;
 }
-.field select option { background: #111; }
+.field select option { background: #f6f1ea; color: #2f2923; }
 .field textarea { resize: none; line-height: 1.8; }
 .contact-form button {
   margin-top: 48px;
@@ -607,7 +611,7 @@ main section {
 /* FOOTER */
 .footer {
   padding: 40px 56px;
-  border-top: 1px solid #141414;
+  border-top: 1px solid var(--line);
   display: flex; justify-content: space-between;
   align-items: center;
 }
