@@ -523,6 +523,31 @@ button, input, select, textarea { font: inherit; }
 .feature-copy p {
   max-width: 66ch;
 }
+.site-footer {
+  margin-top: 52px;
+  padding: 26px 0 10px;
+  border-top: 1px solid var(--line);
+}
+.footer-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: end;
+}
+.footer-contact h3 {
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.footer-contact p,
+.footer-meta {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+.footer-meta {
+  text-align: right;
+}
 
 @media (max-width: 760px) {
   .site-wrap { width: min(100%, calc(100% - 20px)); margin: 10px auto 24px; }
