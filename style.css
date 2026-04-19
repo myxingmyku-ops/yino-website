@@ -313,10 +313,11 @@ button, input, select, textarea { font: inherit; }
 
 .contact-panel {
   display: grid;
-  grid-template-columns: .95fr 1.05fr;
-  gap: 52px;
+  grid-template-columns: .84fr .96fr .62fr;
+  gap: 28px;
   padding: 64px 0 16px;
   border-top: 1px solid var(--line);
+  align-items: start;
 }
 .contact-copy h2 {
   max-width: 14ch;
@@ -351,6 +352,31 @@ button, input, select, textarea { font: inherit; }
   min-height: 120px;
 }
 .full { grid-column: 1 / -1; }
+.contact-qr-card {
+  border: 1px solid var(--line);
+  padding: 18px;
+  background: rgba(250,247,242,0.7);
+}
+.contact-qr-card img {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto 14px;
+  border: 1px solid rgba(216,206,194,.9);
+  background: #fff;
+}
+.contact-qr-card h3 {
+  display: block;
+  font-size: 21px;
+  line-height: 1.45;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact-qr-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
 
 .insight-grid {
   display: grid;
@@ -455,6 +481,7 @@ button, input, select, textarea { font: inherit; }
   .panel-link + .panel-link { border-left: none; padding-left: 0; }
   .panel-link { padding-right: 0; }
   .hero-side { border-left: none; border-top: 1px solid var(--line); padding-left: 0; padding-top: 22px; }
+  .contact-qr-card { max-width: 280px; }
 }
 
 .micro-copy {
