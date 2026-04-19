@@ -484,6 +484,74 @@ button, input, select, textarea { font: inherit; }
   .contact-qr-card { max-width: 280px; }
 }
 
+@media (max-width: 700px) {
+  .contact-panel {
+    gap: 16px;
+    padding: 34px 0 8px;
+  }
+  .contact-copy h2 {
+    max-width: none;
+    font-size: 28px;
+    line-height: 1.38;
+  }
+  .contact-copy p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .contact-copy p + p {
+    margin-top: 8px;
+  }
+  .contact-qr-card {
+    order: 2;
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 12px;
+    align-items: center;
+    max-width: none;
+    margin: 0;
+    padding: 12px;
+  }
+  .contact-qr-card img {
+    width: 92px;
+    max-width: 92px;
+    margin: 0;
+  }
+  .contact-qr-card h3 {
+    font-size: 17px;
+    line-height: 1.35;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  .contact-qr-card p {
+    font-size: 12px;
+    line-height: 1.65;
+    text-align: left;
+  }
+  .contact-form {
+    order: 3;
+    gap: 10px 14px;
+    padding-top: 0;
+  }
+  .contact-form label {
+    gap: 6px;
+  }
+  .contact-form span {
+    font-size: 11px;
+  }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+  .contact-form textarea {
+    min-height: 88px;
+  }
+  .contact-form .btn {
+    min-height: 42px;
+  }
+}
+
 .micro-copy {
   margin-top: 10px;
   max-width: 56ch;
